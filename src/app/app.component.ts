@@ -5,7 +5,6 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import 'rxjs/Rx';
 import * as papa from 'papaparse'
-import { ModalComponent } from './modal/modal.component';
 import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { TestBed } from '@angular/core/testing';
 
@@ -145,11 +144,7 @@ export class AppComponent implements OnInit {
   }
 
   filter() {
-    const activeModal = this.modalService.open(ModalComponent, {
-      size: 'lg',
-      backdrop: true,
-      windowClass: 'popup-center d-flex justify-content-center align-item-center'
-    });
+    
 
     // activeModal.componentInstance.dataResult.subscribe((result) => {
     //   console.log('result in root-grid', result);
