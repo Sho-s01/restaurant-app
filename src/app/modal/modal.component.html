@@ -1,0 +1,21 @@
+<div>
+    <div class="modal-header">
+        <span class=" text-center w-100" >Add Data</span>
+        <button type="button" class="close" data-dismiss="modal"
+            (click)="activeModal.dismiss('Cross click')">&times;</button>
+    </div>
+    <div class="modal-body" >
+        <div class="row mx-0">
+            <label class="pl-2">Key</label>
+            <input name="data" class="mx-2" [(ngModel)]="keyData">
+        </div>
+        <div class="row mt-2">
+
+                <label class="pl-2">Value </label>
+                <input name="data" class="mx-2" [(ngModel)]="valueData">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button  class="text-right" (click)="save()">save</button>       
+    </div>
+</div>

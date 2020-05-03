@@ -1,0 +1,20 @@
+.angular-multiselect {
+    .filter-select-all + div {
+      // position: relative;
+      column-count: 4;
+  
+      ul {
+        padding: 0 !important;
+      }
+    }
+  }
+  
+  .angular-multiselect-col-2 {
+    .filter-select-all + div {
+      column-count: 2;
+  
+      ul {
+        padding: 0 !important;
+      }
+    }
+  }
